@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../Header';
+import Body from '../Body';
 
 const LayoutWrapper = styled.div`
 	width: 1024px;
@@ -14,6 +15,7 @@ const Layout = () => {
 	return (
 		<LayoutWrapper>
 			<Header />
+			<Body />
 		</LayoutWrapper>
 	);
 };

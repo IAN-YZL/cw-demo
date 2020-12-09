@@ -16,10 +16,10 @@ const Header = () => {
 
 	return (
 		<HeaderWrapper align='middle'>
-			<Col span={2}>
+			<Col span={3}>
 				<HeaderButton icon={<ArrowLeftOutlined />} text='BACK' style={{ marginLeft: '20px' }} />
 			</Col>
-			<Col span={16}>
+			<Col span={15}>
 				<HeaderText />
 			</Col>
 			<Col span={6}>

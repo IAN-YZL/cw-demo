@@ -8,10 +8,11 @@ const BtnLayout = styled(Button)`
 	color: #ffffff;
 	border: none;
 	outline: none;
-	padding: 2px 5px;
+	padding: 2px 8px;
 	font-size: 10px;
 	font-weight: 500;
 	margin-right: 10px;
+	height: 25px;
 `;
 
 interface HeaderButtonProps {
