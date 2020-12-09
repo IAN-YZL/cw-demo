@@ -3,6 +3,7 @@ import { Row, Col, Input, Select, DatePicker } from 'antd';
 import styled from 'styled-components';
 import InfoCard from '../InfoCard';
 import Checkbox from 'antd/lib/checkbox/Checkbox';
+import ContactCardBody from './ContactBody';
 
 const { Option } = Select;
 
@@ -77,7 +78,7 @@ const Body = () => {
 					</CardBody>
 				</InfoCard>
 				<InfoCard title='Contacts'>
-
+					<ContactCardBody />
 				</InfoCard>
 			</Col>
 		</BodyLayout>
