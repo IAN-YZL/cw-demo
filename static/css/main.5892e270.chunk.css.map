@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACC,6DACD","file":"main.5892e270.chunk.css","sourcesContent":["body {\n\tbackground: linear-gradient(45deg, rgba(39,153,215,1) 0%, rgba(113,135,180,1) 50%, rgba(189,123,154,1) 100%);\n}"]}
