@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Input, Select } from 'antd';
+import { Row, Col, Input, Select, DatePicker } from 'antd';
 import styled from 'styled-components';
 import InfoCard from '../InfoCard';
 import Checkbox from 'antd/lib/checkbox/Checkbox';
@@ -13,7 +13,7 @@ const BodyLayout = styled(Row)`
 
 const CardBody = styled.div`
 	background-color: #ffffff;
-	padding: 10px 20px;
+	padding: 20px;
 
 	p {
 		margin-bottom: 10px;
@@ -41,7 +41,7 @@ const Body = () => {
 							<Col span={12}>
 								<p>Incident Type</p>
 								<Input.Group style={{ width: '100%' }}>
-									<Select style={{ width: '100%' }} defaultValue='Drury Lane'>
+									<Select style={{ width: '100%', fontSize: '10px' }} defaultValue='Drury Lane'>
 										<Option value='Drury Lane'>
 											Drury Lane
 										</Option>
@@ -59,6 +59,24 @@ const Body = () => {
 					</CardBody>
 				</InfoCard>
 				<InfoCard title='Policy Information'>
+					<CardBody>
+						<Row gutter={8}>
+							<Col span={8}>
+								<p>Policy Number</p>
+								<Input />
+							</Col>
+							<Col span={8}>
+								<p>Policy period start</p>
+								<DatePicker style={{ width: '100%' }} />
+							</Col>
+							<Col span={8}>
+								<p>Policy period end</p>
+								<DatePicker style={{ width: '100%' }} />
+							</Col>
+						</Row>
+					</CardBody>
+				</InfoCard>
+				<InfoCard title='Contacts'>
 
 				</InfoCard>
 			</Col>

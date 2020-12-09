@@ -29,6 +29,7 @@ const HeaderWrapper = styled(Row)`
 
 const CardWrapper = styled.div`
 	margin-bottom: 20px;
+	border: 1px solid #ececec;
 `;
 
 const CardHeader = (props: CardHeaderProps) => {
