@@ -21,10 +21,13 @@ const CardWrapper = styled.div`
 		margin-right: 3px;
 		color: #389e0d;
 	}
-
 `;
 
-const ContactCard = (props: IContactCard) => {
+interface ContactCardProps extends IContactCard {
+	handleDelete: (id: number) => any;
+}
+
+const ContactCard = (props: ContactCardProps) => {
 	return (
 		<CardWrapper>
 			<Row style={{ justifyContent: 'space-between'}}>
@@ -33,7 +36,7 @@ const ContactCard = (props: IContactCard) => {
 				</Col>
 				<Col span={6} style={{ display: 'flex', justifyContent: 'space-around' }}>
 					<EyeOutlined color='#389e0d' />
-					<DeleteOutlined color='#389e0d' />
+					<DeleteOutlined color='#389e0d' onClick={() => props.handleDelete(props.id)} />
 				</Col>
 			</Row>
 			<p>{props.category}</p>
